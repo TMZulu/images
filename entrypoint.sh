@@ -54,7 +54,7 @@ then
 fi
 
 # Download/Update specified Steam Workshop mods, if specified
-if [[ -n ${UPDATE_WORKSHOP} ]];
+if [[ -n ${UPDATE_WORKSHOP} ]] && [[ ${UPDATE_MODS} == "1" ]];
 then
 	for i in $(echo -e ${UPDATE_WORKSHOP} | sed "s/,/ /g")
 	do
